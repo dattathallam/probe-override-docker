@@ -1,2 +1,2 @@
 #!/bin/sh
-echo "[docker-action v2] MAIN running"
+echo "[docker-action v0] MAIN running"
