@@ -1,6 +1,7 @@
-name: probe-override-docker
-description: v0 entrypoint only
+name: probe-override-img
+description: docker:// image action, main only
 runs:
   using: docker
-  image: Dockerfile
-  entrypoint: /main.sh
+  image: docker://alpine:3.18
+  entrypoint: /bin/cat
+  args: ["/etc/alpine-release"]
