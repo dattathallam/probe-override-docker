@@ -1,2 +1,2 @@
 #!/bin/sh
-echo "[docker-action v1] POST running"
+echo "[docker-action v2] POST running"
