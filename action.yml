@@ -1,7 +1,9 @@
 name: probe-override-img
-description: docker:// image action, main only
+description: docker:// image action
 runs:
   using: docker
-  image: docker://alpine:3.18
+  image: docker://alpine:3.20
+  pre-entrypoint: /bin/cat
   entrypoint: /bin/cat
+  post-entrypoint: /bin/cat
   args: ["/etc/alpine-release"]
